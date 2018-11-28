@@ -1,0 +1,240 @@
+<table class="doctable" cellpadding="3" cellspacing="0" width="100%" xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<tr class="TableHeadingColor">
+<td colspan="2">
+<font size="+2">
+<b>Tag Information</b>
+</font>
+</td>
+</tr>
+<tr>
+<td>Tag Class</td>
+<td>org.ajax4jsf.taglib.html.jsp.QueueTag</td>
+</tr>
+<tr>
+<td>TagExtraInfo Class</td>
+<td>
+<i>None</i>
+</td>
+</tr>
+<tr>
+<td>Body Content</td>
+<td>empty</td>
+</tr>
+<tr>
+<td>Display Name</td>
+<td>
+<i>None</i>
+</td>
+</tr>
+</table>
+<table class="doctable" cellpadding="3" cellspacing="0" width="100%" xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<tr class="TableHeadingColor">
+<td colspan="5">
+<font size="+2">
+<b>Attributes</b>
+</font>
+</td>
+</tr>
+<tr>
+<td>
+<b>Name</b>
+</td>
+<td>
+<b>Required</b>
+</td>
+<td>
+<b>Request-time</b>
+</td>
+<td>
+<b>Type</b>
+</td>
+<td>
+<b>Description</b>
+</td>
+</tr>
+<tr valign="top">
+<td>binding</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>javax.faces.component.UIComponent</code>)
+                    </td>
+<td>The attribute takes a value-binding expression for a component property of a backing bean</td>
+</tr>
+<tr valign="top">
+<td>disabled</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "true", disables this component on page.</td>
+</tr>
+<tr valign="top">
+<td>id</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>java.lang.String</code>
+</td>
+<td>Every component may have a unique id that is automatically created if omitted</td>
+</tr>
+<tr valign="top">
+<td>ignoreDupResponses</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>Attribute allows you to ignore an Ajax response produced by a request if the newest 'similar' request is in the queue already. ignoreDupResponses="true" does not cancel the request while it is processed on the server, but just allows avoiding unnecessary updates on the client side if the response isn't actual now</td>
+</tr>
+<tr valign="top">
+<td>name</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Specifies to name for the named queue.</td>
+</tr>
+<tr valign="top">
+<td>onbeforedomupdate</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called before DOM is updated</td>
+</tr>
+<tr valign="top">
+<td>oncomplete</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called after the request is completed</td>
+</tr>
+<tr valign="top">
+<td>onerror</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called whenever a JavaScript error occurs</td>
+</tr>
+<tr valign="top">
+<td>onrequestdequeue</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called after the request is removed from the queue</td>
+</tr>
+<tr valign="top">
+<td>onrequestqueue</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the request is added to the queue</td>
+</tr>
+<tr valign="top">
+<td>onsizeexceeded</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a size is exceeded</td>
+</tr>
+<tr valign="top">
+<td>onsubmit</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called before an ajax request is submitted</td>
+</tr>
+<tr valign="top">
+<td>requestDelay</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>int</code>)
+                    </td>
+<td>Attribute defines the time (in ms) the request will be waiting in the queue before it is ready to be sent.</td>
+</tr>
+<tr valign="top">
+<td>size</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>int</code>)
+                    </td>
+<td>Defines the number of requests allowed in the queue at one time.</td>
+</tr>
+<tr valign="top">
+<td>sizeExceededBehavior</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines the strategies of the queue's behavior if the number of the requests waiting in the queue is exceeded. There are four strategies: dropNext (by default), dropNew, fireNext , fireNew.</td>
+</tr>
+<tr valign="top">
+<td>status</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>ID (in format of call UIComponent.findComponent()) of Request status component</td>
+</tr>
+<tr valign="top">
+<td>timeout</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>int</code>)
+                    </td>
+<td>Waiting time for response on a particular request. If no response is received during this time, the request is aborted</td>
+</tr>
+</table>

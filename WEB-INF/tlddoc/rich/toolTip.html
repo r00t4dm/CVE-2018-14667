@@ -1,0 +1,471 @@
+<table class="doctable" cellpadding="3" cellspacing="0" width="100%" xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<tr class="TableHeadingColor">
+<td colspan="2">
+<font size="+2">
+<b>Tag Information</b>
+</font>
+</td>
+</tr>
+<tr>
+<td>Tag Class</td>
+<td>org.richfaces.taglib.ToolTipTag</td>
+</tr>
+<tr>
+<td>TagExtraInfo Class</td>
+<td>
+<i>None</i>
+</td>
+</tr>
+<tr>
+<td>Body Content</td>
+<td>JSP</td>
+</tr>
+<tr>
+<td>Display Name</td>
+<td>
+<i>None</i>
+</td>
+</tr>
+</table>
+<table class="doctable" cellpadding="3" cellspacing="0" width="100%" xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<tr class="TableHeadingColor">
+<td colspan="5">
+<font size="+2">
+<b>Attributes</b>
+</font>
+</td>
+</tr>
+<tr>
+<td>
+<b>Name</b>
+</td>
+<td>
+<b>Required</b>
+</td>
+<td>
+<b>Request-time</b>
+</td>
+<td>
+<b>Type</b>
+</td>
+<td>
+<b>Description</b>
+</td>
+</tr>
+<tr valign="top">
+<td>action</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.MethodExpression</code>
+<br/>(<i>signature must match </i>
+<code>java.lang.Object action()</code>)
+                    </td>
+<td>MethodBinding pointing at the application action to be invoked, if this UIComponent is activated by you, during the Apply Request Values or Invoke Application phase of the request processing lifecycle, depending on the value of the immediate property</td>
+</tr>
+<tr valign="top">
+<td>actionListener</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.MethodExpression</code>
+<br/>(<i>signature must match </i>
+<code>void actionListener(javax.faces.event.ActionEvent)</code>)
+                    </td>
+<td>MethodBinding pointing at method accepting an ActionEvent with return type void</td>
+</tr>
+<tr valign="top">
+<td>ajaxSingle</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>boolean attribute which provides possibility to limit JSF tree processing(decoding, conversion/validation, value applying) to the component which sends the request only. Default value is "true"</td>
+</tr>
+<tr valign="top">
+<td>attached</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If the value of the "attached" attribute is "true", a component is attached to the parent component; if "false", component does not listen to activating browser events, but could be activated externally. Default value is "true"</td>
+</tr>
+<tr valign="top">
+<td>binding</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>javax.faces.component.UIComponent</code>)
+                    </td>
+<td>The attribute takes a value-binding expression for a component property of a backing bean</td>
+</tr>
+<tr valign="top">
+<td>direction</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines direction of the popup list to appear. Possible values are "top-right", "top-left", "bottom-right", "bottom-left", "auto". Default value is "bottom-right"</td>
+</tr>
+<tr valign="top">
+<td>disabled</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If false the components is rendered on the client but JavaScript for calling disabled. Default value is "false"</td>
+</tr>
+<tr valign="top">
+<td>event</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>DEPRECATED. Use showEvent instead. Default value is "mouseover"</td>
+</tr>
+<tr valign="top">
+<td>followMouse</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "true" tooltip should follow the mouse while it moves over the parent element. Default value is "false"</td>
+</tr>
+<tr valign="top">
+<td>for</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Id of the target component</td>
+</tr>
+<tr valign="top">
+<td>hideDelay</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>int</code>)
+                    </td>
+<td>Delay in milliseconds before tooltip will be hidden. Default value is "0"</td>
+</tr>
+<tr valign="top">
+<td>hideEvent</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Event that triggers the tooltip disappearance. Default value is "none" (so, the component does not disappears)</td>
+</tr>
+<tr valign="top">
+<td>horizontalOffset</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>int</code>)
+                    </td>
+<td>Sets the horizontal offset between pop-up list and mouse pointer. Default value is "10"</td>
+</tr>
+<tr valign="top">
+<td>id</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>java.lang.String</code>
+</td>
+<td>Every component may have a unique id that is automatically created if omitted</td>
+</tr>
+<tr valign="top">
+<td>immediate</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>True means, that the default ActionListener should be executed immediately (i.e. during Apply Request Values phase of the request processing lifecycle), rather than waiting until the Invoke Application phase</td>
+</tr>
+<tr valign="top">
+<td>layout</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Block/inline mode flag. Possible value are: "inline" or "block". Default value is "inline". Tooltip will contain div/span elements respectively</td>
+</tr>
+<tr valign="top">
+<td>mode</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Controls the way of data loading to a tooltip. May have following values: "client" (default) and "ajax"</td>
+</tr>
+<tr valign="top">
+<td>onclick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the tooltip is clicked</td>
+</tr>
+<tr valign="top">
+<td>oncomplete</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called after the tooltip is shown</td>
+</tr>
+<tr valign="top">
+<td>ondblclick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the tooltip is double-clicked</td>
+</tr>
+<tr valign="top">
+<td>onhide</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called after the tooltip is hidden</td>
+</tr>
+<tr valign="top">
+<td>onkeydown</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a key is pressed down over the element</td>
+</tr>
+<tr valign="top">
+<td>onkeypress</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a key is pressed over the element and released</td>
+</tr>
+<tr valign="top">
+<td>onkeyup</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a key is released</td>
+</tr>
+<tr valign="top">
+<td>onmousedown</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a mouse button is pressed down over the element</td>
+</tr>
+<tr valign="top">
+<td>onmousemove</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a pointer is moved within the element</td>
+</tr>
+<tr valign="top">
+<td>onmouseout</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a pointer is moved away from the element</td>
+</tr>
+<tr valign="top">
+<td>onmouseover</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a pointer is moved onto the element</td>
+</tr>
+<tr valign="top">
+<td>onmouseup</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a mouse button is released</td>
+</tr>
+<tr valign="top">
+<td>onshow</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called before the tooltip is shown</td>
+</tr>
+<tr valign="top">
+<td>rendered</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "false", this component is not rendered</td>
+</tr>
+<tr valign="top">
+<td>showDelay</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>int</code>)
+                    </td>
+<td>Delay in milliseconds before tooltip will be displayed. Default value is "0"</td>
+</tr>
+<tr valign="top">
+<td>showEvent</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Event that triggers the tooltip. Default value is "onmouseover"</td>
+</tr>
+<tr valign="top">
+<td>style</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>CSS style rules to be applied to the component</td>
+</tr>
+<tr valign="top">
+<td>styleClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the component. Corresponds to the HTML "class" attribute.</td>
+</tr>
+<tr valign="top">
+<td>value</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.Object</code>)
+                    </td>
+<td>The current value for this component</td>
+</tr>
+<tr valign="top">
+<td>verticalOffset</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>int</code>)
+                    </td>
+<td>Sets the vertical offset between pop-up list and mouse pointer. Default value is "10"</td>
+</tr>
+<tr valign="top">
+<td>zorder</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>int</code>)
+                    </td>
+<td>The same as CSS z-index for toolTip. Default value is "99"</td>
+</tr>
+</table>

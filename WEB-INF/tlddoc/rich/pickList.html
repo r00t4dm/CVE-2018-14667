@@ -1,0 +1,691 @@
+<table class="doctable" cellpadding="3" cellspacing="0" width="100%" xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<tr class="TableHeadingColor">
+<td colspan="2">
+<font size="+2">
+<b>Tag Information</b>
+</font>
+</td>
+</tr>
+<tr>
+<td>Tag Class</td>
+<td>org.richfaces.taglib.PickListTag</td>
+</tr>
+<tr>
+<td>TagExtraInfo Class</td>
+<td>
+<i>None</i>
+</td>
+</tr>
+<tr>
+<td>Body Content</td>
+<td>JSP</td>
+</tr>
+<tr>
+<td>Display Name</td>
+<td>
+<i>None</i>
+</td>
+</tr>
+</table>
+<table class="doctable" cellpadding="3" cellspacing="0" width="100%" xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<tr class="TableHeadingColor">
+<td colspan="5">
+<font size="+2">
+<b>Attributes</b>
+</font>
+</td>
+</tr>
+<tr>
+<td>
+<b>Name</b>
+</td>
+<td>
+<b>Required</b>
+</td>
+<td>
+<b>Request-time</b>
+</td>
+<td>
+<b>Type</b>
+</td>
+<td>
+<b>Description</b>
+</td>
+</tr>
+<tr valign="top">
+<td>binding</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>javax.faces.component.UIComponent</code>)
+                    </td>
+<td>The attribute takes a value-binding expression for a component property of a backing bean</td>
+</tr>
+<tr valign="top">
+<td>controlClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the component controls</td>
+</tr>
+<tr valign="top">
+<td>converter</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>javax.faces.convert.Converter</code>)
+                    </td>
+<td>Id of Converter to be used or reference to a Converter</td>
+</tr>
+<tr valign="top">
+<td>converterMessage</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>A ValueExpression enabled attribute that, if present, will be used as the text of the converter message, replacing any message that comes from the converter</td>
+</tr>
+<tr valign="top">
+<td>copyAllControlLabel</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines a label for a "Copy all" control</td>
+</tr>
+<tr valign="top">
+<td>copyAllTitle</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>HTML: alt for a "Copy all" button</td>
+</tr>
+<tr valign="top">
+<td>copyAllVisible</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "false", the 'Copy All' control will not be displayed. Even if this value is "true", the 'Copy All' control will not be displayed if the "fastMoveControlsVisible" attribute is "false". Default value is "true".</td>
+</tr>
+<tr valign="top">
+<td>copyControlLabel</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines a label for a "Copy" control</td>
+</tr>
+<tr valign="top">
+<td>copyTitle</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>HTML: alt for a "Copy" button</td>
+</tr>
+<tr valign="top">
+<td>copyVisible</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "false", the 'Copy' control will not be displayed. Even if this value is "true", the 'Copy' control will not be displayed if the "moveControlsVisible" attribute is "false". Default value is "true".</td>
+</tr>
+<tr valign="top">
+<td>disabled</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "true", disable this component on page.</td>
+</tr>
+<tr valign="top">
+<td>disabledStyle</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>CSS style rules to be applied to the component disabled controls</td>
+</tr>
+<tr valign="top">
+<td>disabledStyleClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the component disabled controls</td>
+</tr>
+<tr valign="top">
+<td>enabledStyle</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>CSS style rules to be applied to the component enabled controls</td>
+</tr>
+<tr valign="top">
+<td>enabledStyleClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the component enabled controls</td>
+</tr>
+<tr valign="top">
+<td>fastMoveControlsVisible</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "false", 'Copy All' and 'Remove All' controls aren't displayed. Even if this value is "true", the 'Copy All' and 'Remove All' controls will not be displayed if the "copyAllVisible" and "removeAllVisible" attribute values are "false". Default value is "true".</td>
+</tr>
+<tr valign="top">
+<td>id</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>java.lang.String</code>
+</td>
+<td>Every component may have a unique id that is automatically created if omitted</td>
+</tr>
+<tr valign="top">
+<td>immediate</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>A flag indicating that this component value must be converted and validated immediately (that is, during Apply Request Values phase), rather than waiting until a Process Validations phase</td>
+</tr>
+<tr valign="top">
+<td>label</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>A localized user presentable name for this component.</td>
+</tr>
+<tr valign="top">
+<td>listClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the component lists</td>
+</tr>
+<tr valign="top">
+<td>listsHeight</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines height of the list. Default value is "140px"</td>
+</tr>
+<tr valign="top">
+<td>moveControlsVerticalAlign</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Customizes vertically a position of move/copy controls relatively to lists. Default value is "center".</td>
+</tr>
+<tr valign="top">
+<td>moveControlsVisible</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "false", 'Copy' and 'Remove' controls aren't displayed. Even if this value is "true", the 'Copy' and 'Remove' controls will not be displayed if the "copyVisible" and "removeVisible" attribute values are "false". Default value is "true".</td>
+</tr>
+<tr valign="top">
+<td>onblur</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the component loses the focus</td>
+</tr>
+<tr valign="top">
+<td>onclick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the element is clicked</td>
+</tr>
+<tr valign="top">
+<td>ondblclick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the element is double-clicked</td>
+</tr>
+<tr valign="top">
+<td>onfocus</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the component gets the focus</td>
+</tr>
+<tr valign="top">
+<td>onkeydown</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a key is pressed down over the element</td>
+</tr>
+<tr valign="top">
+<td>onkeypress</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a key is pressed over the element and released</td>
+</tr>
+<tr valign="top">
+<td>onkeyup</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a key is released</td>
+</tr>
+<tr valign="top">
+<td>onlistchange</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the list is changed</td>
+</tr>
+<tr valign="top">
+<td>onlistchanged</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called before the list is changed</td>
+</tr>
+<tr valign="top">
+<td>onmousedown</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a mouse button is pressed down over the element</td>
+</tr>
+<tr valign="top">
+<td>onmousemove</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a pointer is moved within the element</td>
+</tr>
+<tr valign="top">
+<td>onmouseout</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a pointer is moved away from the element</td>
+</tr>
+<tr valign="top">
+<td>onmouseover</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a pointer is moved onto the element</td>
+</tr>
+<tr valign="top">
+<td>onmouseup</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a mouse button is released</td>
+</tr>
+<tr valign="top">
+<td>removeAllControlLabel</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines a label for a "Remove all" control</td>
+</tr>
+<tr valign="top">
+<td>removeAllTitle</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>HTML: alt for a "Remove" all button</td>
+</tr>
+<tr valign="top">
+<td>removeAllVisible</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "false", the 'Remove All' control will not be displayed. Even if this value is "true", the 'Remove All' control will not be displayed if the "fastMoveControlsVisible" attribute is "false". Default value is "true".</td>
+</tr>
+<tr valign="top">
+<td>removeControlLabel</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines a label for a "Remove" control</td>
+</tr>
+<tr valign="top">
+<td>removeTitle</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>HTML: alt for a "Remove" button</td>
+</tr>
+<tr valign="top">
+<td>removeVisible</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "false", the 'Remove' control will not be displayed. Even if this value is "true", the 'Remove' control will not be displayed if the "moveControlsVisible" attribute is "false". Default value is "true".</td>
+</tr>
+<tr valign="top">
+<td>rendered</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "false", this component is not rendered</td>
+</tr>
+<tr valign="top">
+<td>required</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "true", this component is checked for non-empty input</td>
+</tr>
+<tr valign="top">
+<td>requiredMessage</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>A ValueExpression enabled attribute which defines text of validation message to show, if a required field is missing</td>
+</tr>
+<tr valign="top">
+<td>showButtonsLabel</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>Shows a label for a button. Default value is "true"</td>
+</tr>
+<tr valign="top">
+<td>sourceListWidth</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines width of a source list. Default value is "140px"</td>
+</tr>
+<tr valign="top">
+<td>style</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>CSS style rules to be applied to the component</td>
+</tr>
+<tr valign="top">
+<td>styleClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more CSS class names to the component. Corresponds to the HTML "class" attribute.</td>
+</tr>
+<tr valign="top">
+<td>switchByClick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "true", items can be moved between the lists by clicking on them. Default value is "false".</td>
+</tr>
+<tr valign="top">
+<td>switchByDblClick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "true", items can be moved between the lists by double-clicking on them. Default value is "true".</td>
+</tr>
+<tr valign="top">
+<td>targetListWidth</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines width of a target list. Default value is "140px"</td>
+</tr>
+<tr valign="top">
+<td>title</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Advisory title information about markup elements generated for this component</td>
+</tr>
+<tr valign="top">
+<td>validator</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.MethodExpression</code>
+<br/>(<i>signature must match </i>
+<code>void validator(javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object)</code>)
+                    </td>
+<td>MethodBinding pointing at a method that is called during Process Validations phase of the request processing lifecycle, to validate the current value of this component</td>
+</tr>
+<tr valign="top">
+<td>validatorMessage</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>A ValueExpression enabled attribute that, if present, will be used as the text of the validator message, replacing any message that comes from the validator</td>
+</tr>
+<tr valign="top">
+<td>value</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.Object</code>)
+                    </td>
+<td>The current value of this component</td>
+</tr>
+<tr valign="top">
+<td>valueChangeListener</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.MethodExpression</code>
+<br/>(<i>signature must match </i>
+<code>void valueChangeListener(javax.faces.event.ValueChangeEvent)</code>)
+                    </td>
+<td>Listener for value changes</td>
+</tr>
+</table>

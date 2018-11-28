@@ -1,0 +1,790 @@
+<table class="doctable" cellpadding="3" cellspacing="0" width="100%" xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<tr class="TableHeadingColor">
+<td colspan="2">
+<font size="+2">
+<b>Tag Information</b>
+</font>
+</td>
+</tr>
+<tr>
+<td>Tag Class</td>
+<td>org.richfaces.taglib.InplaceSelectTag</td>
+</tr>
+<tr>
+<td>TagExtraInfo Class</td>
+<td>
+<i>None</i>
+</td>
+</tr>
+<tr>
+<td>Body Content</td>
+<td>JSP</td>
+</tr>
+<tr>
+<td>Display Name</td>
+<td>
+<i>None</i>
+</td>
+</tr>
+</table>
+<table class="doctable" cellpadding="3" cellspacing="0" width="100%" xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<tr class="TableHeadingColor">
+<td colspan="5">
+<font size="+2">
+<b>Attributes</b>
+</font>
+</td>
+</tr>
+<tr>
+<td>
+<b>Name</b>
+</td>
+<td>
+<b>Required</b>
+</td>
+<td>
+<b>Request-time</b>
+</td>
+<td>
+<b>Type</b>
+</td>
+<td>
+<b>Description</b>
+</td>
+</tr>
+<tr valign="top">
+<td>binding</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>javax.faces.component.UIComponent</code>)
+                    </td>
+<td>The attribute takes a value-binding expression for a component property of a backing bean</td>
+</tr>
+<tr valign="top">
+<td>cancelControlIcon</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines custom cancel icon</td>
+</tr>
+<tr valign="top">
+<td>changedClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the component in the changed state</td>
+</tr>
+<tr valign="top">
+<td>controlClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the component controls</td>
+</tr>
+<tr valign="top">
+<td>controlHoverClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the component control hovered</td>
+</tr>
+<tr valign="top">
+<td>controlPressClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the component control pressed</td>
+</tr>
+<tr valign="top">
+<td>controlsHorizontalPosition</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The attribute positions the controls horizontally. Possible values are "right","center","left". Default value is "right".</td>
+</tr>
+<tr valign="top">
+<td>controlsVerticalPosition</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The attribute positions the controls vertically. Possible values are "bottom","center" and "top". Default value is "center"</td>
+</tr>
+<tr valign="top">
+<td>converter</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>javax.faces.convert.Converter</code>)
+                    </td>
+<td>Id of Converter to be used or reference to a Converter</td>
+</tr>
+<tr valign="top">
+<td>converterMessage</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>A ValueExpression enabled attribute that, if present, will be used as the text of the converter message, replacing any message that comes from the converter</td>
+</tr>
+<tr valign="top">
+<td>defaultLabel</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The attribute is used to display text while value is undefined</td>
+</tr>
+<tr valign="top">
+<td>editClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the component in the edit state</td>
+</tr>
+<tr valign="top">
+<td>editEvent</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The attribute provides an option to assign an JavaScript action that initiates the change of the state. Default value is "onclick".</td>
+</tr>
+<tr valign="top">
+<td>id</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>java.lang.String</code>
+</td>
+<td>Every component may have a unique id that is automatically created if omitted</td>
+</tr>
+<tr valign="top">
+<td>immediate</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>A flag indicating that this component value must be converted and validated immediately (that is, during Apply Request Values phase), rather than waiting until a Process Validations phase</td>
+</tr>
+<tr valign="top">
+<td>label</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>A localized user presentable name for this component.</td>
+</tr>
+<tr valign="top">
+<td>layout</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines how the component is displayed in the layout. Possible values are "block", "inline". Default value is "inline".</td>
+</tr>
+<tr valign="top">
+<td>listHeight</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The attribute defines the height of option list. Default value is "200px".</td>
+</tr>
+<tr valign="top">
+<td>listWidth</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The attribute defines the width of option list. Default value is "200px".</td>
+</tr>
+<tr valign="top">
+<td>maxSelectWidth</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Sets the maximum width of the select element. Default value is "200px".</td>
+</tr>
+<tr valign="top">
+<td>minSelectWidth</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Sets the minimum width of the select element. Default value is "100px".</td>
+</tr>
+<tr valign="top">
+<td>onblur</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the component loses the focus</td>
+</tr>
+<tr valign="top">
+<td>onchange</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the component value is changed</td>
+</tr>
+<tr valign="top">
+<td>onclick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the element is clicked</td>
+</tr>
+<tr valign="top">
+<td>ondblclick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the element is double-clicked</td>
+</tr>
+<tr valign="top">
+<td>oneditactivated</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the component edit state is activated</td>
+</tr>
+<tr valign="top">
+<td>oneditactivation</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called before the component edit state is activated</td>
+</tr>
+<tr valign="top">
+<td>onfocus</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the component gets the focus</td>
+</tr>
+<tr valign="top">
+<td>oninputblur</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the component input field loses the focus</td>
+</tr>
+<tr valign="top">
+<td>oninputclick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the input field is clicked</td>
+</tr>
+<tr valign="top">
+<td>oninputdblclick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the input field is double-clicked</td>
+</tr>
+<tr valign="top">
+<td>oninputfocus</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the component input field gets the focus</td>
+</tr>
+<tr valign="top">
+<td>oninputkeydown</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a key is pressed down in the input field</td>
+</tr>
+<tr valign="top">
+<td>oninputkeypress</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a key is pressed and released in the input field</td>
+</tr>
+<tr valign="top">
+<td>oninputkeyup</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a key is released in the input field</td>
+</tr>
+<tr valign="top">
+<td>oninputmousedown</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a mouse button is pressed down in the input field</td>
+</tr>
+<tr valign="top">
+<td>oninputmousemove</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a pointer is moved within the input field</td>
+</tr>
+<tr valign="top">
+<td>oninputmouseout</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a pointer is moved away from the input field</td>
+</tr>
+<tr valign="top">
+<td>oninputmouseover</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a pointer is moved onto the input field</td>
+</tr>
+<tr valign="top">
+<td>oninputmouseup</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a mouse button is released in the input field</td>
+</tr>
+<tr valign="top">
+<td>onkeydown</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a key is pressed down over the element</td>
+</tr>
+<tr valign="top">
+<td>onkeypress</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a key is pressed over the element and released</td>
+</tr>
+<tr valign="top">
+<td>onkeyup</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a key is released</td>
+</tr>
+<tr valign="top">
+<td>onmousedown</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a mouse button is pressed down over the element</td>
+</tr>
+<tr valign="top">
+<td>onmousemove</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a pointer is moved within the element</td>
+</tr>
+<tr valign="top">
+<td>onmouseout</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a pointer is moved away from the element</td>
+</tr>
+<tr valign="top">
+<td>onmouseover</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a pointer is moved onto the element</td>
+</tr>
+<tr valign="top">
+<td>onmouseup</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a mouse button is released</td>
+</tr>
+<tr valign="top">
+<td>onselect</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when some text is selected in the input field</td>
+</tr>
+<tr valign="top">
+<td>onviewactivated</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the component view state is activated. onviewactivated fires request only if the value is changed</td>
+</tr>
+<tr valign="top">
+<td>onviewactivation</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called before the component view state is activated</td>
+</tr>
+<tr valign="top">
+<td>openOnEdit</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>The attribute opens the list once edit activated. Default value is "true".</td>
+</tr>
+<tr valign="top">
+<td>rendered</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "false", this component is not rendered</td>
+</tr>
+<tr valign="top">
+<td>required</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "true", this component is checked for non-empty input</td>
+</tr>
+<tr valign="top">
+<td>requiredMessage</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>A ValueExpression enabled attribute which defines text of validation message to show, if a required field is missing</td>
+</tr>
+<tr valign="top">
+<td>saveControlIcon</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines custom save icon</td>
+</tr>
+<tr valign="top">
+<td>selectWidth</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Sets width of the select element</td>
+</tr>
+<tr valign="top">
+<td>showControls</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>The attribute serves to display "save" and "cancel" controls. Default value is "false".</td>
+</tr>
+<tr valign="top">
+<td>showValueInView</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "true", shows the SelectItem labels in the InplaceSelect pull-down list, but displays the value in the field in view mode once an item is selected. Default value is "false"</td>
+</tr>
+<tr valign="top">
+<td>styleClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the component. Corresponds to the HTML "class" attribute.</td>
+</tr>
+<tr valign="top">
+<td>tabindex</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>int</code>)
+                    </td>
+<td>The attribute serves to define the tabbing order</td>
+</tr>
+<tr valign="top">
+<td>validator</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.MethodExpression</code>
+<br/>(<i>signature must match </i>
+<code>void validator(javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object)</code>)
+                    </td>
+<td>MethodBinding pointing at a method that is called during Process Validations phase of the request processing lifecycle, to validate the current value of this component</td>
+</tr>
+<tr valign="top">
+<td>validatorMessage</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>A ValueExpression enabled attribute that, if present, will be used as the text of the validator message, replacing any message that comes from the validator</td>
+</tr>
+<tr valign="top">
+<td>value</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.Object</code>)
+                    </td>
+<td>The current value of this component</td>
+</tr>
+<tr valign="top">
+<td>valueChangeListener</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.MethodExpression</code>
+<br/>(<i>signature must match </i>
+<code>void valueChangeListener(javax.faces.event.ValueChangeEvent)</code>)
+                    </td>
+<td>Listener for value changes</td>
+</tr>
+<tr valign="top">
+<td>viewClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the component in the view state</td>
+</tr>
+<tr valign="top">
+<td>viewHoverClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the component hovered in the view state</td>
+</tr>
+</table>

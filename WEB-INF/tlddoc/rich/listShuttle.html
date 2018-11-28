@@ -1,0 +1,995 @@
+<table class="doctable" cellpadding="3" cellspacing="0" width="100%" xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<tr class="TableHeadingColor">
+<td colspan="2">
+<font size="+2">
+<b>Tag Information</b>
+</font>
+</td>
+</tr>
+<tr>
+<td>Tag Class</td>
+<td>org.richfaces.taglib.ListShuttleTag</td>
+</tr>
+<tr>
+<td>TagExtraInfo Class</td>
+<td>
+<i>None</i>
+</td>
+</tr>
+<tr>
+<td>Body Content</td>
+<td>JSP</td>
+</tr>
+<tr>
+<td>Display Name</td>
+<td>
+<i>None</i>
+</td>
+</tr>
+</table>
+<table class="doctable" cellpadding="3" cellspacing="0" width="100%" xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<tr class="TableHeadingColor">
+<td colspan="5">
+<font size="+2">
+<b>Attributes</b>
+</font>
+</td>
+</tr>
+<tr>
+<td>
+<b>Name</b>
+</td>
+<td>
+<b>Required</b>
+</td>
+<td>
+<b>Request-time</b>
+</td>
+<td>
+<b>Type</b>
+</td>
+<td>
+<b>Description</b>
+</td>
+</tr>
+<tr valign="top">
+<td>activeItem</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.Object</code>)
+                    </td>
+<td>Stores active item</td>
+</tr>
+<tr valign="top">
+<td>ajaxKeys</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.util.Set</code>)
+                    </td>
+<td>Defines row keys that are updated after an Ajax request</td>
+</tr>
+<tr valign="top">
+<td>binding</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>javax.faces.component.UIComponent</code>)
+                    </td>
+<td>The attribute takes a value-binding expression for a component property of a backing bean</td>
+</tr>
+<tr valign="top">
+<td>bottomControlClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the 'Bottom' button</td>
+</tr>
+<tr valign="top">
+<td>bottomControlLabel</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines a label for a bottom control</td>
+</tr>
+<tr valign="top">
+<td>bottomTitle</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>HTML: alt for the last button</td>
+</tr>
+<tr valign="top">
+<td>columnClasses</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the columns. If the CSS class names are comma-separated, each class will be assigned to a particular column in the order they follow in the attribute. If you have less class names than columns, the class will be applied to every n-fold column where n is the order in which the class is listed in the attribute. If there are more class names than columns, the overflow ones are ignored.</td>
+</tr>
+<tr valign="top">
+<td>componentState</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>org.ajax4jsf.model.DataComponentState</code>)
+                    </td>
+<td>It defines EL-binding for a component state for saving or redefinition</td>
+</tr>
+<tr valign="top">
+<td>controlsType</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines type of a control: button or none. Default value is "button".</td>
+</tr>
+<tr valign="top">
+<td>controlsVerticalAlign</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Customizes vertically a position of move/copy and order controls relatively to lists. Default value is "middle"</td>
+</tr>
+<tr valign="top">
+<td>converter</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>javax.faces.convert.Converter</code>)
+                    </td>
+<td>Id of Converter to be used or reference to a Converter</td>
+</tr>
+<tr valign="top">
+<td>converterMessage</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>A ValueExpression enabled attribute that, if present, will be used as the text of the converter message, replacing any message that comes from the converter</td>
+</tr>
+<tr valign="top">
+<td>copyAllControlClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the 'Copy all' button</td>
+</tr>
+<tr valign="top">
+<td>copyAllControlLabel</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines a label for a "Copy all" control</td>
+</tr>
+<tr valign="top">
+<td>copyAllTitle</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>HTML: alt for "Copy all" button</td>
+</tr>
+<tr valign="top">
+<td>copyControlClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the 'Copy' button</td>
+</tr>
+<tr valign="top">
+<td>copyControlLabel</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines a label for a "Copy" control</td>
+</tr>
+<tr valign="top">
+<td>copyTitle</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>HTML: alt for a "Copy" button</td>
+</tr>
+<tr valign="top">
+<td>disabledControlClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the component disabled controls</td>
+</tr>
+<tr valign="top">
+<td>downControlClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the 'Down' button</td>
+</tr>
+<tr valign="top">
+<td>downControlLabel</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines a label for a down control</td>
+</tr>
+<tr valign="top">
+<td>downTitle</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>HTML: alt for bottom button</td>
+</tr>
+<tr valign="top">
+<td>fastMoveControlsVisible</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "false", 'Copy All' and 'Remove All' controls aren't displayed. Default value is "true".</td>
+</tr>
+<tr valign="top">
+<td>fastOrderControlsVisible</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "false", 'Top' and 'Bottom' controls aren't displayed. Default value is "true".</td>
+</tr>
+<tr valign="top">
+<td>id</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>java.lang.String</code>
+</td>
+<td>Every component may have a unique id that is automatically created if omitted</td>
+</tr>
+<tr valign="top">
+<td>immediate</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>A flag indicating that this component value must be converted and validated immediately (that is, during Apply Request Values phase), rather than waiting until a Process Validations phase</td>
+</tr>
+<tr valign="top">
+<td>label</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>A localized user presentable name for this component.</td>
+</tr>
+<tr valign="top">
+<td>listClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the component lists</td>
+</tr>
+<tr valign="top">
+<td>listsHeight</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines height of the list. Default value is "140".</td>
+</tr>
+<tr valign="top">
+<td>moveControlsVisible</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "false", 'Copy' and 'Remove' controls aren't displayed. Default value is "true".</td>
+</tr>
+<tr valign="top">
+<td>onblur</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the component loses the focus</td>
+</tr>
+<tr valign="top">
+<td>onbottomclick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the 'Bottom' button is clicked</td>
+</tr>
+<tr valign="top">
+<td>onclick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the component is clicked</td>
+</tr>
+<tr valign="top">
+<td>oncopyallclick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the 'Copy All' button is clicked</td>
+</tr>
+<tr valign="top">
+<td>oncopyclick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the 'Copy' button is clicked</td>
+</tr>
+<tr valign="top">
+<td>ondblclick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the component is double-clicked</td>
+</tr>
+<tr valign="top">
+<td>ondownclick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the 'Down' button is clicked</td>
+</tr>
+<tr valign="top">
+<td>onfocus</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the component gets the focus</td>
+</tr>
+<tr valign="top">
+<td>onlistchange</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called before the list is changed</td>
+</tr>
+<tr valign="top">
+<td>onlistchanged</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the list is changed</td>
+</tr>
+<tr valign="top">
+<td>onmousemove</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a pointer is moved within the component</td>
+</tr>
+<tr valign="top">
+<td>onmouseout</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a pointer is moved away from the component</td>
+</tr>
+<tr valign="top">
+<td>onmouseover</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when a pointer is moved onto the component</td>
+</tr>
+<tr valign="top">
+<td>onorderchange</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called before the list order is changed</td>
+</tr>
+<tr valign="top">
+<td>onorderchanged</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the list order is changed</td>
+</tr>
+<tr valign="top">
+<td>onremoveallclick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the 'Remove All' button is clicked</td>
+</tr>
+<tr valign="top">
+<td>onremoveclick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the 'Remove' button is clicked</td>
+</tr>
+<tr valign="top">
+<td>ontopclick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the 'Top' button is clicked</td>
+</tr>
+<tr valign="top">
+<td>onupclick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>The client-side script method to be called when the 'Up' button is clicked</td>
+</tr>
+<tr valign="top">
+<td>orderControlsVisible</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "false", 'Up' and 'Down' controls aren't displayed. Default value is "true".</td>
+</tr>
+<tr valign="top">
+<td>removeAllControlClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the 'Remove all' button</td>
+</tr>
+<tr valign="top">
+<td>removeAllControlLabel</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines a label for a "Remove all" control</td>
+</tr>
+<tr valign="top">
+<td>removeAllTitle</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>HTML: alt for "Remove all" button</td>
+</tr>
+<tr valign="top">
+<td>removeControlClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the 'Remove' button</td>
+</tr>
+<tr valign="top">
+<td>removeControlLabel</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines a label for a "Remove" control</td>
+</tr>
+<tr valign="top">
+<td>removeTitle</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>HTML: alt for a "Remove" button</td>
+</tr>
+<tr valign="top">
+<td>rendered</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "false", this component is not rendered</td>
+</tr>
+<tr valign="top">
+<td>requiredMessage</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>A ValueExpression enabled attribute which defines text of validation message to show, if a required field is missing</td>
+</tr>
+<tr valign="top">
+<td>rowClasses</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the rows. If the CSS class names are comma-separated, each class will be assigned to a particular row in the order they follow in the attribute. If you have less class names than rows, the class will be applied to every n-fold row where n is the order in which the class is listed in the attribute. If there are more class names than rows, the overflow ones are ignored.</td>
+</tr>
+<tr valign="top">
+<td>rowKeyConverter</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>javax.faces.convert.Converter</code>)
+                    </td>
+<td>Converter for a row key object</td>
+</tr>
+<tr valign="top">
+<td>rowKeyVar</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>java.lang.String</code>
+</td>
+<td>The attribute provides access to a row key in a Request scope</td>
+</tr>
+<tr valign="top">
+<td>showButtonLabels</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>Shows a label for a button. Default value is "true".</td>
+</tr>
+<tr valign="top">
+<td>sourceCaptionLabel</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines source list caption representation text</td>
+</tr>
+<tr valign="top">
+<td>sourceListWidth</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines width of a source list. Default value is "140".</td>
+</tr>
+<tr valign="top">
+<td>sourceRequired</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>Defines the case when source value is being validated. If the value is "true", there should be at least one item in the source list</td>
+</tr>
+<tr valign="top">
+<td>sourceSelection</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.util.Set</code>)
+                    </td>
+<td>Manages selection in a source list from the server side</td>
+</tr>
+<tr valign="top">
+<td>sourceValue</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.Object</code>)
+                    </td>
+<td>Defines a List or Array of items to be shown in a source list</td>
+</tr>
+<tr valign="top">
+<td>style</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>CSS style rules to be applied to the component</td>
+</tr>
+<tr valign="top">
+<td>styleClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more CSS class names to the component. Corresponds to the HTML "class" attribute.</td>
+</tr>
+<tr valign="top">
+<td>switchByClick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "true", dragging between lists realized by click</td>
+</tr>
+<tr valign="top">
+<td>switchByDblClick</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>If "true", items can be moved between the lists by double-clicking on them. Default value is "true".</td>
+</tr>
+<tr valign="top">
+<td>targetCaptionLabel</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines target list caption representation text</td>
+</tr>
+<tr valign="top">
+<td>targetListWidth</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines width of a target list. Default value is "140".</td>
+</tr>
+<tr valign="top">
+<td>targetRequired</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>boolean</code>)
+                    </td>
+<td>Defines the case when target value is being validated. If the value is "true", there should be at least one item in the target list</td>
+</tr>
+<tr valign="top">
+<td>targetSelection</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.util.Set</code>)
+                    </td>
+<td>Manages selection in a target list from the server side</td>
+</tr>
+<tr valign="top">
+<td>targetValue</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.Object</code>)
+                    </td>
+<td>Defines a List or Array of items to be shown in a target list</td>
+</tr>
+<tr valign="top">
+<td>topControlClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the 'Top' button</td>
+</tr>
+<tr valign="top">
+<td>topControlLabel</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines a label for a "Top" control</td>
+</tr>
+<tr valign="top">
+<td>topTitle</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>HTML: alt for the first button</td>
+</tr>
+<tr valign="top">
+<td>upControlClass</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Assigns one or more space-separated CSS class names to the 'Up' button</td>
+</tr>
+<tr valign="top">
+<td>upControlLabel</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>Defines a label for an "Up" control</td>
+</tr>
+<tr valign="top">
+<td>upTitle</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>HTML: alt for top button</td>
+</tr>
+<tr valign="top">
+<td>validator</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.MethodExpression</code>
+<br/>(<i>signature must match </i>
+<code>void validator(javax.faces.context.FacesContext, javax.faces.component.UIComponent, java.lang.Object)</code>)
+                    </td>
+<td>MethodBinding pointing at a method that is called during Process Validations phase of the request processing lifecycle, to validate the current value of this component</td>
+</tr>
+<tr valign="top">
+<td>validatorMessage</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.ValueExpression</code>
+<br/>(<i>must evaluate to </i>
+<code>java.lang.String</code>)
+                    </td>
+<td>A ValueExpression enabled attribute that, if present, will be used as the text of the validator message, replacing any message that comes from the validator</td>
+</tr>
+<tr valign="top">
+<td>valueChangeListener</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>javax.el.MethodExpression</code>
+<br/>(<i>signature must match </i>
+<code>void valueChangeListener(javax.faces.event.ValueChangeEvent)</code>)
+                    </td>
+<td>Listener for value changes</td>
+</tr>
+<tr valign="top">
+<td>var</td>
+<td>false</td>
+<td>false</td>
+<td>
+<code>java.lang.String</code>
+</td>
+<td>Defines a list on the page</td>
+</tr>
+</table>
